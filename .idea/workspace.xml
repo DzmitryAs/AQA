@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="39e12c06-d130-4200-a1fc-e8852eba2402" name="Changes" comment="Commit_8" />
+    <list default="true" id="39e12c06-d130-4200-a1fc-e8852eba2402" name="Changes" comment="Commit_9">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Lesson_4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Employee.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -63,9 +67,10 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.Employee (1)">
-    <configuration name="Employee (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.Lesson_4">
+    <configuration name="Employee (1)" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="Employee" />
+      <module name="AQA" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -100,9 +105,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Lesson_4" />
         <item itemvalue="Application.Employee (1)" />
         <item itemvalue="Application.Employee" />
-        <item itemvalue="Application.Lesson_4" />
         <item itemvalue="Application.Lesson_5" />
         <item itemvalue="Application.Lesson_3" />
       </list>
@@ -173,7 +178,14 @@
       <option name="project" value="LOCAL" />
       <updated>1706433562852</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Commit_8">
+      <created>1706459152743</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1706459152743</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -196,6 +208,7 @@
     <MESSAGE value="Commit_6" />
     <MESSAGE value="Commit_7" />
     <MESSAGE value="Commit_8" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit_8" />
+    <MESSAGE value="Commit_9" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit_9" />
   </component>
 </project>
