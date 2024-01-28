@@ -30,7 +30,6 @@ public class Lesson_3 {
          */
         System.out.print("7. arr100: ");
         int[] arr100 = new int[100];
-        arr100[0] = 1;
         for (int i = 0; i < arr100.length; i++) {
             arr100[i] = i + 1;
             System.out.print(arr100[i] + " ");
@@ -114,7 +113,7 @@ public class Lesson_3 {
     високосный - false). Каждый 4-й год является високосным, кроме каждого 100-го, при этом каждый 400-й – високосный.
      */
     public static boolean checkYear(int h) {
-        return h % 4 == 0 && h % 100 != 0 || h % 400 == 0;
+        return (h % 400 == 0) || (h % 4 == 0 && h % 100 != 0);
     }
 
     /*
