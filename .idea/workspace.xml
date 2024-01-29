@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="39e12c06-d130-4200-a1fc-e8852eba2402" name="Changes" comment="Commit_9">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Lesson_4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Lesson_4.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Lesson_4.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Employee.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Employee.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,21 +62,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
-}</component>
-  <component name="RunManager" selected="Application.Lesson_4">
+}]]></component>
+  <component name="RunManager" selected="Application.Park">
     <configuration name="Employee (1)" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="Employee" />
-      <module name="AQA" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Employee" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Employee" />
       <module name="AQA" />
       <method v="2">
@@ -89,6 +86,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Lesson_4$Employee" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Lesson_4$Employee" />
+      <module name="AQA" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Lesson_4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Lesson_4" />
       <module name="AQA" />
@@ -96,8 +100,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Lesson_5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Lesson_5" />
+    <configuration name="Park" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Park" />
       <module name="AQA" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -105,11 +109,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Park" />
         <item itemvalue="Application.Lesson_4" />
-        <item itemvalue="Application.Employee (1)" />
-        <item itemvalue="Application.Employee" />
-        <item itemvalue="Application.Lesson_5" />
+        <item itemvalue="Application.Lesson_4$Employee" />
         <item itemvalue="Application.Lesson_3" />
+        <item itemvalue="Application.Employee (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -185,7 +189,14 @@
       <option name="project" value="LOCAL" />
       <updated>1706459152743</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Commit_9">
+      <created>1706464006920</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1706464006920</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
