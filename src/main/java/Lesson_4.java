@@ -28,12 +28,12 @@ public class Lesson_4 {
 }
 
 class Employee {
-    private String name;
-    private String position;
-    private String email;
-    private String phone;
-    private int salary;
-    private int age;
+    private final String name;
+    private final String position;
+    private final String email;
+    private final String phone;
+    private final int salary;
+    private final int age;
 
     public Employee(String name, String position, String email, String phone, int salary, int age) {
         this.name = name;
@@ -64,7 +64,7 @@ class Park {
         attraction1.getAttrInfo();
     }
 
-    public class Attraction {
+    class Attraction {
         private String attractionName;
         private String workingHours;
         private String cost;
@@ -73,6 +73,7 @@ class Park {
             System.out.println("Attraction Name: " + attractionName + ";  Working Hours: " + workingHours + ";  Cost :" + cost);
         }
     }
+
 }
 
 
