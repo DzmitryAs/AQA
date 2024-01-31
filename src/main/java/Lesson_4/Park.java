@@ -1,26 +1,28 @@
 package Lesson_4;
 
 public class Park {
-    /*
-    Создать класс Park с внутренним классом, с помощью объектов которого можно хранить информацию об аттракционах, времени их работы и стоимости.
-     */
     public static void main(String[] args) {
-        Park park = new Park();
-        Park.Attraction attraction1 = new Attraction();
-
-        attraction1.attractionName = "The Sun";
-        attraction1.workingHours = "12:00 - 24:00";
-        attraction1.cost = "10";
-        attraction1.getAttrInfo();
+        Attractions[] attraction = new Attractions[2];
+        attraction[0] = new Attractions("water", "12-24", "10");
+        attraction[1] = new Attractions("fire", "12-24", "15");
+        for (Attractions attractions : attraction) {
+            System.out.println(attractions);
+        }
     }
 
-    public static class Attraction {
-        private String attractionName;
-        private String workingHours;
-        private String cost;
+    public static class Attractions {
+        private final String attractionName;
+        private final String workingHours;
+        private final String cost;
 
-        public void getAttrInfo() {
-            System.out.println("Attraction Name: " + attractionName + ";  Working Hours: " + workingHours + ";  Cost :" + cost);
+        public Attractions(String attractionName, String workingHours, String cost) {
+            this.attractionName = attractionName;
+            this.workingHours = workingHours;
+            this.cost = cost;
+        }
+
+        public String toString() {
+            return ("Attraction Name: " + attractionName + ";  Working Hours: " + workingHours + ";  Cost:" + cost);
         }
     }
 }
