@@ -1,28 +1,48 @@
 package Lesson_4;
 
 public class Park {
-    public static void main(String[] args) {
-        Attractions[] attraction = new Attractions[2];
-        attraction[0] = new Attractions("water", "12-24", "10");
-        attraction[1] = new Attractions("fire", "12-24", "15");
-        for (Attractions attractions : attraction) {
-            System.out.println(attractions);
-        }
+    private final String parkName;
+    private final Attractions[] attractions;
+
+    public Park(String parkName, int attractionQuanity) {
+        this.parkName = parkName;
+        this.attractions = new Attractions[attractionQuanity];
     }
 
     public static class Attractions {
         private final String attractionName;
         private final String workingHours;
-        private final String cost;
+        private final String price;
 
-        public Attractions(String attractionName, String workingHours, String cost) {
+        public Attractions(String attractionName, String workingHours, String price) {
             this.attractionName = attractionName;
             this.workingHours = workingHours;
-            this.cost = cost;
+            this.price = price;
         }
 
-        public String toString() {
-            return ("Attraction Name: " + attractionName + ";  Working Hours: " + workingHours + ";  Cost:" + cost);
+        public void getInfo() {
+            System.out.println("Attraction: " +
+                    attractionName + "\n" +
+                    "WorkingHours: " +
+                    workingHours + "\n" +
+                    "Price: " + price);
+        }
+    }
+
+    public void addAttractions(int id, String attractionName, String workingHours, String price) {
+        if (id >= 0 && id < attractions.length) {
+            attractions[id] = new Attractions(attractionName, workingHours, price);
+        } else
+            System.out.println("Invalid attraction id");
+    }
+
+    public void getParkAttrections() {
+        System.out.println("Park attractions" + parkName + ":");
+        for (Attractions attraction : attractions) {
+            if (attraction != null) {
+                attraction.getInfo();
+                System.out.println();
+            }
         }
     }
 }
