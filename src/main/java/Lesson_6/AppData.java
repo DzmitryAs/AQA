@@ -1,4 +1,19 @@
 package Lesson_6;
+/*
+Реализовать сохранение данных в csv файл; Реализовать загрузку данных из csv файла. Файл читается целиком.
+Структура csv файла:
+Строка заголовок с набором столбцов
+Набор строк с целочисленными значениями
+Разделитель между столбцами - символ точка с запятой (;)
+Пример (см. на прикрепленном скриншоте)
+Для хранения данных использовать класс вида:
+public class AppData {
+   private String[] header;
+   private int[][] data;
+   // ...
+}
+Если выполняется save(AppData data), то старые данные в файле полностью перезаписываются.
+ */
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -15,7 +30,6 @@ public class AppData {
         this.data = data;
     }
 
-    //сохранение данных в csv файл
     public void save(String fileName) {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(fileName))) {
             //записываем заголовок
@@ -28,7 +42,6 @@ public class AppData {
                 }
             }
 
-            //записываем данные
             for (int[] datum : data) {
                 for (int j = 0; j < datum.length; j++) {
                     writer.append(String.valueOf(datum[j]));
@@ -44,7 +57,6 @@ public class AppData {
         }
     }
 
-    //загрузка данных из csv файла
     public static AppData load(String fileName) {
         try (BufferedReader reader = new BufferedReader(new FileReader(fileName))) {
             //читаем первую строку
@@ -84,7 +96,6 @@ public class AppData {
         };
         AppData appData = new AppData(header, data);
 
-        //сохраняем данные в файл
         appData.save("data.csv");
 
         AppData loadedData = AppData.load("data.csv");
