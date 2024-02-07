@@ -2,6 +2,7 @@ package Lesson_5_Animal;
 
 public class Animal {
     private static int animalCount;
+
     public Animal() {
         animalCount++;
     }
@@ -11,11 +12,11 @@ public class Animal {
         System.out.println("Animal created - " + animalCount);
     }
 
-    public void run (int runLimit) {
+    public void run(int runLimit) {
         System.out.println();
     }
 
-    public void swim (int swimLimit) {
+    public void swim(int swimLimit) {
         System.out.println();
     }
 
