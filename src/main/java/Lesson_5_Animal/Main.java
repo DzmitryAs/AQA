@@ -17,13 +17,13 @@ public class Main {
         Cat cat1 = new Cat("cat1", 2);
         Cat cat2 = new Cat("cat2", 2);
         Dog dog1 = new Dog("dog1");
-        cat1.run(201);
-        cat2.run(200);
+        cat1.run(200);
+        cat2.run(201);
         dog1.run(500);
         dog1.run(501);
-        cat1.swim(40);
-        dog1.swim(5);
-        dog1.swim(15);
+        cat1.swim(5);
+        dog1.swim(10);
+        dog1.swim(11);
 
         Animal.printQuantityOfAnimals();
         Cat.printQuantityOfCats();
