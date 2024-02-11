@@ -26,7 +26,7 @@ public class Triangle implements Calculation {
 
     @Override
     public double calculateArea() {
-        double semiperimeter = (side1 + side2 + side3) / 2;
+        double semiperimeter = calculatePerimeter() / 2;
         return Math.sqrt(semiperimeter * (semiperimeter - side1) *
                 (semiperimeter - side2) * (semiperimeter - side3));
     }

@@ -14,48 +14,41 @@ package Lesson_5_Animal;
 
 public class Main {
     public static void main(String[] args) {
+        Cat cat1 = new Cat("cat1", 2);
+        Cat cat2 = new Cat("cat2", 2);
+        Dog dog1 = new Dog("dog1");
+        cat1.run(200);
+        cat2.run(201);
+        dog1.run(500);
+        dog1.run(501);
+        cat1.swim(5);
+        dog1.swim(10);
+        dog1.swim(11);
 
-        Animal[] animals = new Animal[4];
-        animals[0] = new Cat("Cat1", 200, 0,5);
-        animals[1] = new Cat("Cat2", 200, 0,10);
-        animals[2] = new Dog("Dog1", 500, 10,15);
-        animals[3] = new Dog("Dog2", 500, 10,20);
-        for (int i = 0; i < animals.length; i++) {
-            System.out.println(animals[i]);
-        }
-
-        System.out.println();
-        System.out.println("Сats created: " + Cat.getCount());
-        System.out.println("Dogs created: " + Dog.getCount());
-        System.out.println("Total animals created: " + Animal.getCount());
-
-        System.out.println();
-        System.out.println("Run: ");
-        for (int i = 0; i < animals.length; i++) {
-            animals[i].run(300);
-        }
+        Animal.printQuantityOfAnimals();
+        Cat.printQuantityOfCats();
+        Dog.printQuantityOfDogs();
 
         System.out.println();
-        System.out.println("Swim: ");
-        for (int i = 0; i < animals.length; i++) {
-            animals[i].swim(10);
-        }
 
-        System.out.println();
+        Cat[] cats = new Cat[4];
+        cats[0] = cat1;
+        cats[1] = cat2;
+        cats[2] = new Cat("cat3", 3);
+        cats[3] = new Cat("cat4", 1);
+
         Food food = new Food();
-        System.out.println("AmountOfFood: " + Food.getAmountOfFood());
+        food.increaseAmountOfFood(4);
 
-        System.out.println();
-        for (Animal animal : animals) {
-            animal.eatFood(food);
+        for (
+                Cat cat : cats) {
+            cat.eatFood(food);
         }
 
-        System.out.println();
-        for (Animal animal : animals) {
-            animal.satietyInfo();
-        }
+        food.info();
 
+        for (Cat cat : cats) {
+            cat.satietyInfo();
+        }
     }
 }
-
-

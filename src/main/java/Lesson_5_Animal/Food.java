@@ -1,9 +1,9 @@
 package Lesson_5_Animal;
 
 public class Food {
-    private static int amountOfFood=10;
+    private int amountOfFood = 1;
 
-    public void increaseAmountOfFood (int amountOIncrease) {
+    public void increaseAmountOfFood (int amountOfFood) {
         this.amountOfFood += amountOfFood;
     }
 
@@ -11,8 +11,14 @@ public class Food {
         amountOfFood -= amountToDecrease;
     }
 
-    public static int getAmountOfFood() {
+    public int getAmountOfFood() {
         return amountOfFood;
+    }
+
+    public void info() {
+        System.out.println();
+        System.out.println("Amount of food on the plate - " + amountOfFood);
+        System.out.println();
     }
 }
 
