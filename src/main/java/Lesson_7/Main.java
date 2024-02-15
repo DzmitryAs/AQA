@@ -4,9 +4,9 @@ public class Main {
     public static void main(String[] args) {
         int result = 0;
 
-        String[][] array = {{"1", "1", "1", "1"}, {"1", "1", "1", "1"}};
-        String[][] error_array = {{"1", "2", "3", "4", "1"}, {"1", "2", "3", "4"}};
-        String[][] error_data = {{"1", "1", "3", "4",}, {"1", "2", "аа3", "4"}};
+        String[][] array = {{"1", "1", "1", "1"}, {"1", "1", "1", "1"}, {"9", "8", "7", "6"}, {"5", "4", "3", "2"}};
+        String[][] error_array = {{"1", "2", "3", "4", "1"}, {"1", "2", "3", "4"}, {"9", "8", "7", "6"}, {"5", "4", "3", "2"}};
+        String[][] error_data = {{"1", "1", "3", "4",}, {"1", "2", "3", "4"}, {"9", "8", "7", "6"}, {"5", "4", "3", "2t"}};
 
         System.out.println("Checking an array with a correct size:");
         try {
@@ -43,13 +43,13 @@ public class Main {
     public static int analyze(String[][] array) throws MyArraySizeException, MyArrayDataException {
         int sum = 0;
 
-        if (array.length != 2 || array[0].length != 4 || array[1].length != 4) {
+        if (array.length != 4 || array[0].length != 4 || array[1].length != 4 || array[2].length != 4 || array[3].length != 4) {
             throw new MyArraySizeException();
         } else {
-            System.out.println("Array length is correct");
+            System.out.println("Array size is correct");
         }
 
-        for (int i = 1; i < 3; i++) {
+        for (int i = 1; i < 5; i++) {
             for (int c = 1; c < 5; c++) {
                 try {
                     sum += Integer.parseInt(array[i - 1][c - 1]);
